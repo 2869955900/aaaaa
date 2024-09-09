@@ -37,7 +37,7 @@ if st.button("Predict"):
     predicted_proba = model.predict_proba(features)[0]
 
     # 显示预测结果
-    st.write(f"**Predicted Class:** {predicted_class} (1: Lymphoma, 0: Healthy)")
+    st.write(f"**Predicted Class:** {predicted_class} (0: Healthy, 1: Lymphoma)")
     st.write(f"**Prediction Probabilities:** {predicted_proba}")
 
     # 根据预测结果提供建议
